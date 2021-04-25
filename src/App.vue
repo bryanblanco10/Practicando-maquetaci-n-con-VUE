@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <HeaderComponent />
+      <div class="container">
+        <!-- <CarritoComponent /> -->
+        <ModalProduct />
+      </div>
+      <FooterComponent />
+      <!-- admin -->
+      <!-- <HeaderComponent />
+      <MenuComponent />
+      <ContentComponent /> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/layout/HeaderComponent.vue'
+// import CarritoComponent from './components/layout/CarritoComponent.vue'
+import FooterComponent from './components/layout/FooterComponent.vue'
+import ModalProduct from './components/layout/modals-Products/ModalProduct.vue'
+// admin
+// import HeaderComponent from './components/admin/HeaderComponent.vue'
+// import MenuComponent from './components/admin/MenuComponent.vue'
+// import ContentComponent from './components/admin/ContentComponent.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    HeaderComponent,
+    // CarritoComponent,
+    FooterComponent,
+    ModalProduct
+    // admin
+    // HeaderComponent,
+    // MenuComponent,
+    // ContentComponent
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './assets/css/layout.css';
+  /*admin*/
+   /*@import './assets/css/styles.css';*/
 </style>

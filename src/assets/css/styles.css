@@ -1,0 +1,193 @@
+*{
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+.cover{
+	background: 50% 50% no-repeat;
+	background-size: cover;
+}
+
+/*sideBar*/
+.sideBar{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all .3s ease-in-out;
+}
+.sideBar .sideBar-ct{
+	width: 270px;
+}
+.sideBar{
+	left: 0;
+	z-index: 2;
+	background-image: url('../img/sideBar-font.jpg');
+	border-right: 1px solid rgba(255, 255, 255, .4);
+	overflow: hidden;
+}
+.sideBar-ct{
+	position: relative;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .77);
+	padding: 0 10px;
+	padding-bottom: 30px;
+}
+.sideBar-title{
+	height: 50px;
+	line-height: 50px;
+	color: #ffff;
+	position: relative;
+}
+.sideBar-UserInfo{
+	border-top: 1px solid rgba(255, 255, 255, .3);
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	color: #ffff;
+	font-size: 14px;
+	padding-top: 20px 0;
+}
+.sideBar-UserInfo figure img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.sideBar-UserInfo ul{
+	margin-top: 15px;
+}
+.sideBar-UserInfo ul > li,
+.sideBar-UserInfo ul > li > a{
+	display: inline-block;
+	color: #ffff;
+}
+.sideBar-UserInfo ul > li > a{
+	outline: none;
+	font-size: 20px;
+	padding: 7px;
+	transition: all .3s ease-in-out;
+}
+.sideBar-UserInfo ul > li > a:hover{
+	color: #FF5722;
+}
+.sideBar-menu{
+	padding-top: 15px;
+}
+.sideBar-menu > li,
+.sideBar-menu > li > a,
+.sideBar-menu > li > ul > li,
+.sideBar-menu > li > ul > li > a{
+	line-height:50px;
+	font-family: sans-serif;
+	display: block;
+	color: #ffff;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: all .3s ease-in-out;
+	position: relative;
+}
+.sideBar-menu > li > a{
+	padding: 0 15px;
+	box-sizing: border-box;
+	height: 50px;
+	outline: none;
+}
+.sideBar-menu > li > a:hover{
+	background-color: rgba(255, 255, 255, .1);
+}
+.sideBar-menu > li > ul{
+	position: relative;
+	padding-top: 7px;
+	height: 0;
+/*	overflow: hidden;*/
+}
+.sideBar-menu > li > ul > li,
+.sideBar-menu > li > ul > li > a{
+	height: 40px;
+	line-height: 40px;
+	border-radius: 0;
+}
+.sideBar-menu > li > ul > li{
+	padding-left: 27px;
+}
+.sideBar-menu > li > ul > li > a{
+	border-left: 3px solid transparent;
+	outline: none;
+}
+.sideBar-menu > li > ul > li > a:hover{
+	border-left: 3px solid #FF5722;
+	color: #FF5722;
+}
+
+.angledown{
+	line-height: 50px;
+	transition: all .3s ease-in-out;
+	margin-left: 80px;
+}
+
+/*Navbar*/
+.Navbar{
+	right: 0;
+	z-index: 1;
+	padding-left: 270px;
+	background-color: #000;
+	overflow: hidden;
+}
+.Navbar,
+.Navbar > ul,
+.Navbar > ul > li,
+.Navbar > ul > li > a{
+	height: 50px;
+	line-height: 50px;
+}
+.Navbar > ul > li > a{
+	outline: none;
+}
+
+.Navbar > ul > li,
+.Navbar > ul > li > a{
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	transition: all .3s ease-in-out;
+	position: relative;
+}
+.Navbar > ul > li > a:hover{
+	background-color: rgba(255, 255, 255, .1);
+	color: #FF5722;
+}
+.notificacion,
+.mensaje{
+	position: relative;
+	left: 880px;
+}
+.userright{
+	position: relative;
+	left: 890px;
+}
+.Navbar > ul > li > a > span.badge{
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	border-radius: 100%;
+	background-color: #FF5722;
+	transition: all .3s ease-in-out;
+}
+.Navbar > ul > li > a:hover > span.badge{
+	background-color: #fff;
+	color: #333;
+}
+/*Content*/
+.content{
+	right: 0;
+	z-index: 1;
+	padding-left: 270px;
+	background-color: #f2f2f2;
+	height: 100vh;
+}
